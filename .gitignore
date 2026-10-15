@@ -1,0 +1,13 @@
+swiggy_dbt/target/
+swiggy_dbt/tests/
+swiggy_dbt/logs/
+swiggy_dbt/ai/__pycache__/
+swiggy_dbt/analyses/notebook/.ipynb_checkpoints/
+swiggy_dbt/analyses/notebook/city_revenue_forcast.joblib
+logs/
+.venv/
+data/
+
+
+
+

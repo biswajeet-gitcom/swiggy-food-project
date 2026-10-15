@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Project data architecture</title>
+  <desc id="desc">Local files load to a Snowflake stage and RAW bronze layer. dbt creates silver staging views and gold marts. Python notebook and Streamlit consume gold outputs.</desc>
+  <defs><linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#12918a"/></linearGradient></defs>
+  <rect width="1200" height="390" rx="22" fill="#f8fafc"/>
+  <text x="40" y="44" fill="#172554" font-family="Arial,sans-serif" font-size="21" font-weight="700">ELT + MEDALLION LAYERS</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle">
+    <g><rect x="35" y="95" width="165" height="130" rx="18" fill="#315f95"/><text x="117" y="137" fill="#fff" font-size="17" font-weight="700">LOCAL FILES</text><text x="117" y="168" fill="#e6f0f7" font-size="14">CSV / CSV.GZ</text><text x="117" y="190" fill="#e6f0f7" font-size="13">manual upload</text></g>
+    <g><rect x="235" y="95" width="165" height="130" rx="18" fill="#244b70"/><text x="317" y="137" fill="#fff" font-size="17" font-weight="700">STAGE</text><text x="317" y="168" fill="#e6f0f7" font-size="14">Snowflake</text><text x="317" y="190" fill="#e6f0f7" font-size="13">file landing</text></g>
+    <g><rect x="435" y="95" width="165" height="130" rx="18" fill="#172554"/><text x="517" y="137" fill="#fff" font-size="17" font-weight="700">BRONZE</text><text x="517" y="168" fill="#e6f0f7" font-size="14">SWIGGY.RAW</text><text x="517" y="190" fill="#e6f0f7" font-size="13">source-shaped tables</text></g>
+    <g><rect x="635" y="95" width="165" height="130" rx="18" fill="#0f766e"/><text x="717" y="137" fill="#fff" font-size="17" font-weight="700">SILVER</text><text x="717" y="168" fill="#e6f0f7" font-size="14">dbt STAGING</text><text x="717" y="190" fill="#e6f0f7" font-size="13">clean views</text></g>
+    <g><rect x="835" y="95" width="165" height="130" rx="18" fill="url(#gold)"/><text x="917" y="137" fill="#fff" font-size="17" font-weight="700">GOLD</text><text x="917" y="168" fill="#e6f0f7" font-size="14">dbt MARTS</text><text x="917" y="190" fill="#e6f0f7" font-size="13">facts · dimensions · marts</text></g>
+    <g><rect x="1035" y="95" width="130" height="130" rx="18" fill="#6b4b91"/><text x="1100" y="137" fill="#fff" font-size="16" font-weight="700">ANALYZE</text><text x="1100" y="168" fill="#f0eafb" font-size="13">Python</text><text x="1100" y="190" fill="#f0eafb" font-size="13">Streamlit</text></g>
+  </g>
+  <g stroke="#fc8019" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M202 160h26m-8-8 8 8-8 8"/><path d="M402 160h26m-8-8 8 8-8 8"/><path d="M602 160h26m-8-8 8 8-8 8"/><path d="M802 160h26m-8-8 8 8-8 8"/><path d="M1002 160h26m-8-8 8 8-8 8"/>
+  </g>
+  <path d="M918 237v42H525v-39" fill="none" stroke="#fc8019" stroke-width="3" stroke-dasharray="8 7"/>
+  <text x="720" y="310" fill="#334155" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">dbt transforms inside Snowflake  ·  Gold feeds notebook analysis and interactive app views</text>
+  <text x="720" y="351" fill="#64748b" font-family="Arial,sans-serif" font-size="12" text-anchor="middle">No Airflow orchestration in this learning project</text>
+</svg>

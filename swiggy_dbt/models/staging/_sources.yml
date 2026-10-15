@@ -1,0 +1,20 @@
+sources:
+  - name: raw
+    database: SWIGGY
+    schema: RAW
+    tables:
+      - name: RESTAURANTS
+        description: "This table contains information about restaurants."
+      - name: REVIEWS
+        description: "This table contains reviews for the restaurants."
+      - name: USERS
+        description: "This table contains information about users who have written reviews."
+      - name : FOOD
+        description: "This table contains information about food items available at the restaurants."
+      - name : MENU
+        description: "This table contains information about the menu items available at the restaurants."
+      - name : ORDERS
+        description: "This table contains information about the orders placed by users."
+      - name : ORDER_ITEMS
+        description: "This table contains information about the items included in each order."
+      
